@@ -1,0 +1,93 @@
+RESOURCES: 
+* 6 reasons for partner programming :
+    * https://www.codefellows.org/blog/6-reasons-for-pair-programming/
+* JavaScript and jQuery book by Jon Duckett pages 293-301, 306-331 and 354-357
+
+NOTES:
+PAIR PROGRAMMING: 
+* It is a common misconception that pair programming takes a lot longer and is less efficient. In reality, when two people focus on the same code base, it is easier to catch mistakes in the making. Research indicates that pair programing takes slightly longer, but produces higher-quality code that doesn’t require later effort in troubleshooting and debugging (let alone exposing users to a broken product).
+* When coming up with ideas and discussing solutions out loud, two programmers may come to a solution faster than one programmer on their own.
+* Another important aspect of learning to program is knowing when to ask for help. We advise our students to spend no more than fifteen minutes stuck on a problem before asking a teaching assistant or instructor for help.
+* Everyone has a different approach to problem solving; working with a teammate can expose developers to techniques they otherwise would not have thought of.
+* Pair programming is great for improving social skills. When working with someone who has a different coding style, communication is key.
+* A common step in many interview processes involves pair programming between a current employee and an applicant, either in person or through a shared screen.
+
+JQUERY BOOK: 
+* jQuery offers a simple way to achieve a variety of common JS tasks quickly. 
+    * SELECT elements
+    * PERFORM tasks
+        * methods let you animate elements into and out of view, loops through a set of elements all in one line of code
+    * HANDLE events
+        * allows you to attach event listeners to selected elements without having to write any fallback code to support older browsers. 
+* Find elements using CSS Style selectors: 
+    * Ex: $('li.hot')
+        * the jQuery() function has one parameter: a CSS-style selector.
+        * this example finds all of the <li> elements with a class of hot. 
+    * the jQuery object has a number of methods you can use to work with the elements you select. 
+* When you select one or more elements, a jQuery object is returned. it is also known as a matched set or jQuery selection. 
+    * single element: Ex: $('ul'), if a selector returns one element, the jQuery object contains a reference to just one element node. The selector picks the <ul> element from the page. So the jQuery object contains a reference to just one node ( the only <ul> on the page )
+    * multiple elements: If a selector returns several elements, the jQuery object contains a reference to each element. Ex. $('li'), the selector picks all of the <li> elements and has references for each of the nodes that was selected/ the resulting jQuery object contains four list items, with each element having a corresponding index number. 
+* // GET //If a jQuery selection has more than one elements, and a method is used to get info from the selected element, it will retrieve info from only the first element in the matched set. 
+* // SET // if a jQuery selection holds more than one element, and a method is used to update info on the page, it will update all of the elements on the page. 
+* When you create a selection w/ jQuery, it stores a reference to the corresponding nodes in the DOM tree. It does not create copies of them. 
+* A jQuery object stores references to elements. Caching a jQuery object stores a reference to it in a variable.
+* Looping (p310)
+    * when a selector returns multiple elements, you can update all of them using the one method.
+* Chaining (p311)
+    * if you want to use more than one method on the same selection of elements, you can list several methods at a time using dot notation to separate each one. 
+        * Ex. $('li [id!="one"]').hide().delay(500).fadeIn(1400);
+* .ready() method checks that the page is ready for your code to work with. 
+* Placing scripts just before the closing body tag is advisable because then all of the HTML elements have already been uploaded to the DOM before the script runs. 
+* page 314 - .html vs .text
+* four methods to update elements 
+    * .html()
+    * .text()
+    * .replaceWith()
+    * .remove()
+* Inserting new elements involves two steps: 
+    * Create the new elements in a jQuery object 
+        * Ex: var $newFragment = $('<li>');
+    * use a method to insert the content into the page
+        * var $newItem = $('<li class = "new">item</li>');
+* Adding new elements to the page: 
+    * .before()
+    * .after()
+    * .prepend()
+    * .append()
+* Getting and setting attribute values: 
+    * .attr() 
+    * .removeAttr()
+    * .addClass()
+    * .removeClass()
+* Working with each element in a selection: 
+    * .each()
+        * jQuery allows you to recreate the functionality of a loop on a selection of elements. 
+        * allows you to perform one or more methods on a jQuery selection. 
+Ex: 
+$('li').each(function(){
+var ids = this.id;
+$(this).append(' <em class="order"> + ids + '</em');
+});
+
+        * the jQuery selection contains all of the <li> elements. 
+        * .each() applies the same code to each element in the selection.
+        * An anonymous function is run for each of the items in the list. 
+    * this or $()
+        * As the .each() method goes through the elements in a selection, you can access the current element using the this keyword.
+        * You also will see $(this) which uses the this keyword to create a new jQuery selection containing the current element. 
+* Event methods
+    * the .on() method is used to handle all events. 
+    * Every event handling function receives an event object. It has methods and properties related to the even that occurred.
+        * jQuery event object has properties and methods that tell you more about the event that took place. 
+        * If you look at the function that is called when the event occurs, the event object is named in the parenthesis. Like any other parameter, this name is then used within the function to refer to the event object. 
+* a CDN (Content Delivery Network) is a series of servers spread out around the world. They are designed to serve static files (HTML,CSS, JavaScript, images, audio, and video files) very quickly. 
+* The CDN tries to find the server near you, then sends files from that server so the data does not travel far. 
+* When including jQuery in your pages, you can try to load it from a CDN. Then you check if it loaded, and if not, you can include a version that is stored on your own servers (this is known as a fallback) 
+* Where to place your scripts (page 356) 
+
+
+
+
+
+
+
