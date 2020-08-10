@@ -1,5 +1,5 @@
 # Reading Journal
-Reading reflections for CodeFellows classes 301 and 401
+Reading reflections for CodeFellows classes 301 and 401. 
 
 
 # This is where an Intro would be. 
@@ -22,5 +22,9 @@ Reading reflections for CodeFellows classes 301 and 401
   
 - 401 Reading Journal 
   - [Reading Journal 01](./RR401-01.md)
+  - [Reading Journal 02]()
+  - [Reading Journal 03]()
+  - [Reading Journal 04]()
+  - [Reading Journal 05]()
   ></p>
 
