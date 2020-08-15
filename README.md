@@ -22,7 +22,7 @@ Reading reflections for CodeFellows classes 301 and 401.
   
 - 401 Reading Journal 
   - [Reading Journal 01](./RR401-01.md)
-  - [Reading Journal 02]()
+  - [Reading Journal 02](./RR401-02.md)
   - [Reading Journal 03]()
   - [Reading Journal 04]()
   - [Reading Journal 05]()
